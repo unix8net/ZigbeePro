@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9E1F6B7E-1977-4BA7-B958-B9A1D86728A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AccleZigBee</RootNamespace>
+    <AssemblyName>AccleZigBee</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MyExcel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsFormsControlLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\WindowsFormsControlLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class2.cs" />
+    <Compile Include="Construct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Construct.Designer.cs">
+      <DependentUpon>Construct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileCopy.Designer.cs">
+      <DependentUpon>FileCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileView.Designer.cs">
+      <DependentUpon>FileView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainHomeConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainHomeFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainHomeSerial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config.Designer.cs">
+      <DependentUpon>Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainHome.Designer.cs">
+      <DependentUpon>MainHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainHomeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetStruct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetStruct.Designer.cs">
+      <DependentUpon>NetStruct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NodeDescribePacket.cs" />
+    <Compile Include="Notify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notify.Designer.cs">
+      <DependentUpon>Notify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Config.resx">
+      <DependentUpon>Config.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Construct.resx">
+      <DependentUpon>Construct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileView.resx">
+      <DependentUpon>FileView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainHome.resx">
+      <DependentUpon>MainHome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetStruct.resx">
+      <DependentUpon>NetStruct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notify.resx">
+      <DependentUpon>Notify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Send.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\picture\net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\picture\set.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\picture\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\picture\disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\picture\start.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\picture\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\picture\midRouter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\picture\End.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\picture\off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\picture\Coor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\picture\Router.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\picture\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Properties\picture\bigBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\picture\on.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\off.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\head.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\construct.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\bigBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\4p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\algorithm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\quality.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\cycle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\ring.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\GraylargeCoor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\GraylargeRouter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="picture\Coor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
