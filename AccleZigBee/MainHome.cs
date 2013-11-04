@@ -199,7 +199,7 @@ namespace AccleZigBee
                 //因为协调器在软件启动时已经虚拟出来，所以真正节点上线后需要特殊处理
 
 
-                if (nodeType == 0x00)
+                if (0x00 == nodeType)
                 {
                     if (coorIsOnline)
                         return;
